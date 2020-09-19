@@ -4,26 +4,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title></title>
+    <script src="scripts/BurgerMenu.js"></script>
+    <title>Danielė Grigaitė</title>
 </head>
 
 <body>
     <div class="topnav">
 
-  <div class="topnav-centered">
-    <a href="#home" class="active">Daniele Grigaite</a>
-  </div>
+        <div class="topnav-centered">
+            <a href="#home" class="active">Danielė Grigaitė</a>
+        </div>
 
-  <a href="#news">Portfolio</a>
-  <a href="#contact">Contact me</a>
+        <div class="topnav-desktop-display-only">
+            <a href="#news">Portfolio</a>
+            <a href="#contact">Contact me</a>
 
-  <div class="topnav-right">
-    <a href="#search">About me</a>
-    <a href="#about">About</a>
-  </div>
+            <div class="topnav-right">
+                <a href="#search">About me</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
 
-</div>
+        <div id="burger-menu" class="burger-menu-container topnav-right" onclick="on(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </div>
+
+    <div class="title-space">
+        <div class="double-column-container">
+            <div class="left-column">
+                <p>MULTIMEDIA SPECIALIST | </p>
+                <p>CLOTHES DESIGNER</p>
+            </div>
+            <div class="right-column">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <a href="#news">Portfolio</a>
+            <a href="#contact">Contact me</a>
+            <a href="#search">About me</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
 
 
     <div class="main-wrapper">
@@ -31,8 +64,6 @@
         <div class="flex-item"><img class="main-image" src="img/web_design_cover-01.png" alt=""></div>
         <div class="flex-item"><img class="main-image" src="img/web_design_cover-01.png" alt=""></div>
         <div class="flex-item"><img class="main-image" src="img/web_design_cover-01.png" alt=""></div>
-
-        <!-- <div class="flex-item">4</div> -->
     </div>
 </body>
 

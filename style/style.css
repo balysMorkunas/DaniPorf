@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Code+Pro:wght@500;600&display=swap');
 
+/* __________________GENERAL CSS __________________*/
+
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Source Code Pro', monospace;
 }
 
 
-body {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-font-family: 'Source Code Pro', monospace;
-}
+/* __________________NAV BAR CSS__________________ */
 
 .topnav {
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
+    z-index: 10000;
 }
 
 .topnav a {
     float: left;
     color: black;
     text-align: center;
-    padding: 17px 16px;
-    margin: 5px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .topnav a:hover {
@@ -37,6 +37,7 @@ font-family: 'Source Code Pro', monospace;
 }
 
 .topnav-centered a {
+    font-size: 20px;
     float: none;
     position: absolute;
     top: 50%;
@@ -48,20 +49,156 @@ font-family: 'Source Code Pro', monospace;
     float: right;
 }
 
-@media screen and (max-width: 600px) {
-
-    .topnav a,
-    .topnav-right {
-        float: none;
-        display: block;
+@media screen and (max-width: 645px) {
+    .topnav-desktop-display-only {
+        display: none;
     }
-
     .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+        font-size: 17px;
     }
+}
+
+
+/* _______________BURGER MENU CSS_______________ */
+
+.burger-menu-container {
+    display: none;
+    cursor: pointer;
+    padding: 17px 18px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(45deg) translateY(17px) translateX(0);
+    transform: rotate(45deg) translateY(17px) translateX(0);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(-45deg) translateY(-17px) translateX(0);
+    transform: rotate(-45deg) translateY(-17px) translateX(0);
+}
+
+#overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(255, 255, 255, 0.65); */
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    background-color: rgb(255, 255, 255, 0.65);
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: lightpink;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 645px) {
+    .burger-menu-container {
+        display: inline-block;
+    }
+}
+
+
+/* _______________TITLE SPACE CSS_______________ */
+
+.title-space {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+.double-column-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+    font-size: 21px;
+}
+
+.left-column {}
+
+.right-column {
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.title-space hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(173, 173, 173);
+    /* Modern Browsers */
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background-color: rgb(53, 53, 53);
+}
+
+.fa-google {
+    background-color: rgb(53, 53, 53);
+}
+
+
+/* __________________BODY CSS __________________ */
+
+body {
+    margin: 0;
 }
 
 .main-wrapper {
@@ -73,17 +210,15 @@ font-family: 'Source Code Pro', monospace;
     text-align: center;
 }
 
-.main-image {  
+.main-image {
     object-fit: scale-down;
     width: 90%;
     height: auto;
-
 }
 
-@media screen and (max-width: 645px){
-    * {
-        background-color: black;
+@media screen and (max-width: 645px) {
+    .main-wrapper {
         flex-flow: column;
-        gap: 10px;
-    }        
+        gap: 20px;
+    }
 }
