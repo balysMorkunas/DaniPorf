@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/BurgerMenu.js"></script>
-    <title>Danielė Grigaitė</title>
+    <script src="scripts/fade.js"></script>
+    <title>danielė grigaitė</title>
 </head>
 
-<body>
+<body class="animate-in">
     <div class="topnav">
 
         <div class="topnav-centered">
-            <a href="index.html" class="active">Danielė Grigaitė</a>
+            <a href="index.html" class="active">danielė grigaitė</a>
         </div>
 
         <div class="topnav-desktop-display-only">
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact me</a>
+            <a href="work.html">work</a>
 
             <div class="topnav-right">
-                <a href="about.html">About me</a>
-                <a href="#about">About</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
             </div>
         </div>
 
@@ -36,14 +36,53 @@
 
     <div id="overlay" class="overlay">
         <div class="overlay-content">
-            <a href="work.html">Work</a>
-            <a href="#contact">Contact me</a>
-            <a href="about.html">About me</a>
-            <a href="#about">About</a>
+            <a href="work.html">work</a>
+            <a href="contact.html">contact</a>
+            <a href="about.html">about</a>
         </div>
     </div>
 
+    <hr>
 
+    <link href="style/contact-form.css" rel="stylesheet">
+
+    <div class="contact-wrapper">
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+                <h3 class="fcf-h3">contact me</h3>
+
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">send</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
