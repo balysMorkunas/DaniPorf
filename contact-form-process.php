@@ -2,8 +2,8 @@
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "balmrk@gmail.com";
-    $email_subject = "Email from multidani.eu";
+    $email_to = "daniele@multidani.eu";
+    $email_subject = "Email from client";
 
     function problem($error)
     {
@@ -64,12 +64,17 @@ if (isset($_POST['Email'])) {
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+    if(mail($email_to, $email_subject, $email_message, $headers)) {
+        header('Location: /DaniPorf/success.html');
+    } 
+    else {
+        header('Location: /DaniPorf/contact.html');
+    }
 ?>
 
     <!-- include your success message below -->
 
-    thank you for contacting me - I'll be in touch soon
+
 
 <?php
 }
