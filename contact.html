@@ -11,78 +11,86 @@
 </head>
 
 <body class="animate-in">
-    <div class="topnav">
+    <div class="content">
+        <div class="topnav">
 
-        <div class="topnav-centered">
-            <a href="index.html" class="active">danielė grigaitė</a>
+            <div class="topnav-centered">
+                <a href="index.html" class="active">danielė grigaitė</a>
+            </div>
+
+            <div class="topnav-desktop-display-only">
+                <a href="work.html">work</a>
+
+                <div class="topnav-right">
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+
+            <div id="burger-menu" class="burger-menu-container topnav-right" onclick="on(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
         </div>
 
-        <div class="topnav-desktop-display-only">
-            <a href="work.html">work</a>
-
-            <div class="topnav-right">
-                <a href="about.html">about</a>
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <a href="work.html">work</a>
                 <a href="contact.html">contact</a>
+                <a href="about.html">about</a>
             </div>
         </div>
 
-        <div id="burger-menu" class="burger-menu-container topnav-right" onclick="on(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <hr>
 
-    </div>
+        <link href="style/contact-form.css" rel="stylesheet">
 
-    <div id="overlay" class="overlay">
-        <div class="overlay-content">
-            <a href="work.html">work</a>
-            <a href="contact.html">contact</a>
-            <a href="about.html">about</a>
-        </div>
-    </div>
+        <div class="contact-wrapper">
+            <div class="fcf-body">
 
-    <hr>
+                <div id="fcf-form">
+                    <h3 class="fcf-h3">contact me</h3>
 
-    <link href="style/contact-form.css" rel="stylesheet">
+                    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 
-    <div class="contact-wrapper">
-        <div class="fcf-body">
-
-            <div id="fcf-form">
-                <h3 class="fcf-h3">contact me</h3>
-
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-
-                    <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">your name</label>
-                        <div class="fcf-input-group">
-                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        <div class="fcf-form-group">
+                            <label for="Name" class="fcf-label">your name</label>
+                            <div class="fcf-input-group">
+                                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">your email address</label>
-                        <div class="fcf-input-group">
-                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        <div class="fcf-form-group">
+                            <label for="Email" class="fcf-label">your email address</label>
+                            <div class="fcf-input-group">
+                                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">your message</label>
-                        <div class="fcf-input-group">
-                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">your message</label>
+                            <div class="fcf-input-group">
+                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">send</button>
-                    </div>
-                </form>
+                        <div class="fcf-form-group">
+                            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">send</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-
         </div>
     </div>
+
+    <footer class="footer">
+        <hr class="line"> grigaite.daniele@gmail.com
+    </footer>
 </body>
+
+
 
 </html>

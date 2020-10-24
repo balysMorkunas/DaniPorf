@@ -10,77 +10,136 @@
     <title>danielė grigaitė</title>
 </head>
 
+
 <body class="animate-in">
-    <div class="topnav">
+    <div class="content">
+        <div class="topnav">
 
-        <div class="topnav-centered">
-            <a href="index.html" class="active">danielė grigaitė</a>
+            <div class="topnav-centered">
+                <a href="index.html" class="active">danielė grigaitė</a>
+            </div>
+
+            <div class="topnav-desktop-display-only">
+                <a href="work.html">work</a>
+
+                <div class="topnav-right">
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+
+            <div id="burger-menu" class="burger-menu-container topnav-right" onclick="on(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
         </div>
 
-        <div class="topnav-desktop-display-only">
-            <a href="work.html">work</a>
-
-            <div class="topnav-right">
-                <a href="about.html">about</a>
-                <a href="contact.html">contact</a>
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <a href="work.html">Work</a>
+                <a href="#contact">Contact me</a>
+                <a href="about.html">About me</a>
+                <a href="#about">About</a>
             </div>
         </div>
 
-        <div id="burger-menu" class="burger-menu-container topnav-right" onclick="on(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <hr>
 
+        <div class="work-wrapper">
+
+            <div class="column-left">
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/simplestory_cover-01.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/fit_live_cover-01.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/food-sharing-cover-01.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column-right">
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/Nuojautos_cover-01.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/responsive_web_cover.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="item shadow">
+                    <div class="work-unit-container">
+                        <div class="work-unit-container-item">
+                            <a href="...">
+                                <img class="work-unit-img" src="img/responsive_web_cover.png">
+                            </a>
+                        </div>
+                        <div class="work-unit-container-item hidden">
+                            <p class="work-unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="overlay" class="overlay">
-        <div class="overlay-content">
-            <a href="work.html">work</a>
-            <a href="contact.html">contact</a>
-            <a href="about.html">about</a>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="work-wrapper">
-
-        <div class="column-left">
-            <div class="item">
-                <div class="work-unit-container-item">
-                    <img class="work-unit-img" src="img/simplestory_cover-01.png">
-                </div>
-            </div>
-            <div class="item">
-                <div class="work-unit-container-item">
-                    <img class="work-unit-img" src="img/fit_live_cover-01.png">
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="work-unit-container-item">
-                    <img class="work-unit-img" src="img/food-sharing-cover-01.png">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="column-right">
-            <div class="item">
-                <div class="work-unit-container-item">
-                    <img class="work-unit-img" src="img/Nuojautos_cover-01.png">
-                </div>
-            </div>
-            <div class="item">
-                <div class="work-unit-container-item">
-                    <img class="work-unit-img" src="img/responsive_web_cover.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    <footer class="footer">
+        <hr class="line"> grigaite.daniele@gmail.com
+    </footer>
 </body>
 
 </html>
