@@ -294,8 +294,10 @@ body hr {
 .work-unit-img {
     background-color: rgb(247, 247, 247);
     object-fit: scale-down;
-    width: 80%;
+    width: 100%;
     height: auto;
+    max-width: 270px;
+    max-height: 270px;
 }
 
 .work-unit-text {
@@ -310,6 +312,7 @@ body hr {
 .bold {
     font-weight: bold;
 }
+
 @media screen and (max-width: 745px) {
     .work-wrapper {
         flex-flow: column;
