@@ -254,7 +254,7 @@ body hr {
     flex-direction: column
 }
 
-@media screen and (max-width: 1187px) {
+@media screen and (max-width: 1380px) {
     .work-wrapper {
         flex-flow: column;
         justify-content: center;
@@ -301,6 +301,7 @@ body hr {
 }
 
 .work-unit-text {
+    margin-left: 30px;
     background-color: rgb(247, 247, 247);
     text-overflow: ellipsis;
 }
